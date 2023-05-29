@@ -28,7 +28,7 @@ public class SeleccionControlador {
 	@GetMapping("/seleccion/nuevo")
 	public String mostrarFormularioDeRegistrarSeleccion(Model modelo) {
 		Seleccion seleccion = new Seleccion();
-		modelo.addAttribute("estudiante",seleccion);
+		modelo.addAttribute("seleccion",seleccion);
 		return "crear_seleccion";
 	}
 	
