@@ -1,6 +1,7 @@
 package com.app.web.controlador;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.app.web.entidad.Continente;
 import com.app.web.servicio.ContinenteServicio;
 
+@Controller
 public class ContinenteControlador  {
 	
 	@Autowired
@@ -33,3 +35,4 @@ public class ContinenteControlador  {
 		return "redirect:/continentes";
 	}
 }
+
